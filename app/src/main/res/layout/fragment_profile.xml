@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment"
+    android:background="@color/dark_back"
+    android:padding="40dp">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Personal Details"
+         android:textColor="@color/text_color_bright"
+         android:id="@+id/lablePersonalDetails"
+         android:layout_marginTop="50dp"
+      />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:textColor="@color/text_color_bright"
+         android:drawableStart="@drawable/ic_baseline_person_24_white"
+         android:text="nameHolder"
+         android:id="@+id/personName"
+         android:layout_marginTop="20dp"
+         android:drawablePadding="20dp"
+         android:layout_below="@+id/lablePersonalDetails"
+         />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:textColor="@color/text_color_bright"
+     android:drawableStart="@drawable/ic_baseline_date_range_24_white"
+     android:text="Age Holder"
+     android:id="@+id/personAge"
+     android:layout_marginTop="20dp"
+     android:drawablePadding="20dp"
+     android:layout_below="@+id/personName"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:textColor="@color/text_color_bright"
+     android:drawableStart="@drawable/ic_baseline_phone_24_white"
+     android:text="phone"
+     android:id="@+id/personPhone"
+     android:layout_marginTop="20dp"
+     android:drawablePadding="20dp"
+     android:layout_below="@+id/personAge"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:textColor="@color/text_color_bright"
+     android:drawableStart="@drawable/ic_baseline_email_24_white"
+     android:text="email holder"
+     android:id="@+id/personmailID"
+     android:layout_marginTop="20dp"
+     android:layout_below="@+id/personPhone"
+     android:drawablePadding="20dp"
+     />
+ <RelativeLayout
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:id="@+id/BtnLogout"
+     android:layout_below="@+id/personmailID"
+     android:layout_marginTop="40dp"
+     android:background="@drawable/curve_box"
+     android:padding="10dp">
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_swipe_left_alt_24"
+      android:id="@+id/logoutimg"
+      android:layout_alignParentStart="true"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="logout"
+      android:id="@+id/logoutText"
+      android:textAllCaps="true"
+      android:textColor="@color/purple_500"
+      android:textStyle="bold"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      />
+ </RelativeLayout>
+
+
+
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Privacy Policy"
+  android:id="@+id/privacyPolicyText"
+  android:layout_below="@+id/BtnLogout"
+  android:textColor="@color/purple_200"
+  android:layout_marginTop="90dp"
+  android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

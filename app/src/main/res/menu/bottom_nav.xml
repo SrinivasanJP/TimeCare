@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/nav_home"
+    android:title="home"
+    android:icon="@drawable/ic_baseline_home_24"
+    android:orderInCategory="1"
+    />
+    <item android:id="@+id/nav_addTask"
+        android:title="Add task"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:orderInCategory="2"/>
+    <item android:id="@+id/nav_addSchedule"
+        android:title="Add schedule"
+        android:icon="@drawable/ic_baseline_schedule_24"
+        android:orderInCategory="3"/>
+    <item android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:orderInCategory="4"/>
+</menu>

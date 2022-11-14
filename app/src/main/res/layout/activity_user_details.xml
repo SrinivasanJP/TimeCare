@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserDetails"
+    android:background="@color/dark_back">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lablePersonalDetails"
+        android:text="Enter your personal details"
+        android:textColor="@color/text_color_bright"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lableFirstName"
+        android:layout_below="@+id/lablePersonalDetails"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curve_box"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstname"
+            android:background="@drawable/curve_box"
+            android:hint="Enter your First Name"
+            android:textColor="@color/dark_back"
+            android:autofillHints="name"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lableLastName"
+        android:layout_below="@+id/lableFirstName"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curve_box"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastname"
+            android:background="@drawable/curve_box"
+            android:hint="Enter your Last Name"
+            android:textColor="@color/dark_back"
+            android:autofillHints="name"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lableAge"
+        android:layout_below="@+id/lableLastName"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curve_box"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:background="@drawable/curve_box"
+            android:textColor="@color/dark_back"
+            android:hint="Enter your Age"
+            android:autofillHints="age"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lablePhone"
+        android:layout_below="@+id/lableAge"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curve_box"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_box"
+            android:hint="Enter your Mobile NO"
+            android:textColor="@color/dark_back"
+            android:id="@+id/phone"
+            android:inputType="phone"
+            android:autofillHints="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/BtnaddData"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lablePhone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_back"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/btnTextView"/>
+
+        <ProgressBar
+            android:id="@+id/Personal_details_progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddTaskFragment"
+    android:background="@color/dark_back">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ADD TASK"
+    android:textColor="@color/text_color_bright"
+    android:textSize="35sp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/lableLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="50dp"/>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/lableLayout"
+        android:id="@+id/container_inputs_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lable_enter_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Enter Task Title : "
+            android:textColor="@color/text_color_bright"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/task_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/curve_box"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/lable_enter_task_discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Enter Task Description : "
+            android:textColor="@color/text_color_bright"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/task_discription_input"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/curve_box"
+            android:maxHeight="100dp"
+            android:scrollbars="vertical"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/curve_box"
+            android:gravity="center"
+            android:text="Select Date"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/btnAddTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_box"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/ProgressbarAddTask"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/BtnAddTasktv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ADD TASK"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

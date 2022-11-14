@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418729375567",
+    "project_id": "timecarejp",
+    "storage_bucket": "timecarejp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418729375567:android:b889c01c72347286eeb73a",
+        "android_client_info": {
+          "package_name": "com.srini.timecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418729375567-utkdlh3q7ajnf1rp4c3et5aq6cv85jgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMJGT-yAIMdVGiaIYIEbHSjlxWxXJN7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418729375567-utkdlh3q7ajnf1rp4c3et5aq6cv85jgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

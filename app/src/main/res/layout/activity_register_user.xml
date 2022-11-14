@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterUser"
+    android:background="#17202a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:id="@+id/welcomeMessage"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#cccccc"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeCare"
+        android:id="@+id/app_name"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcomeMessage"
+        android:textColor="#cccccc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/signupText"
+        android:textColor="#cccccc"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupText"
+        android:id="@+id/emailLayout"
+        android:layout_margin="40dp"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:background="@drawable/curve_box"
+            android:id="@+id/signUPEmailID"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLayout"
+        android:id="@+id/passwordLayout"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundMode="filled"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="#00000000"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/curve_box"
+            android:id="@+id/SignUPPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:id="@+id/ProgressbarSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIN"
+        android:background="@drawable/curve_box"
+        android:layout_below="@+id/ProgressbarSignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to Sign in?"
+        android:textColor="#cccccc"
+        android:id="@+id/backtologin"
+        android:layout_below="@+id/btnSignIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
